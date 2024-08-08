@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <script src="vendor/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="content">
+        <!-- <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>ADMIN</h2>
+            </div>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Teaching Stuff</a></li>
+                <li><a href="#">My stuff</a></li>
+                <li><a href="#">Career Portfolio</a></li>
+            </ul>
+        </div> -->
+        <div class="main-content">
+            <div class="header">
+                <input type="text" placeholder="Search for...">
+                <div class="user-info">
+                    <span>Anish</span>
+                    <img src="blog-1.jpg" alt="User Image">
+                </div>
+            </div>
+            <div class="dashboard">
+                <h2>Dashboard</h2>
+                <div class="expert-listing">
+                    <h3>EXPERT LISTING</h3>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Add New
+                      </button>
+                      <div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">New Registration</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form action="post">
+          Name <input type="text">
+          <div>
+            SPECIALIZATION <input type="text">
+          </div>
+
+          <div>
+            EXPERIENCE <input type="text" name="" id="">
+          </div>
+          <div>
+            IASDS <input type="text" name="" id="">
+
+          </div>
+          <div>
+            PRESENT INVOLVEMENT <input type="text" name="" id="">
+
+          </div>
+          <div>
+            ACTION 
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Submit</button>
+           
+          </div>
+
+
+
+        </form>
+        
+
+
+
+
+
+
+
+
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SL. NO.</th>
+                                <br>
+                                <th>NAME</th>
+                                <th>SPECIALIZATION</th>
+                                <th>EXPERIENCE</th>
+                                <th>IASDS STATUS</th>
+                                <th>PRESENT INVOLVEMENT</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data rows go here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
